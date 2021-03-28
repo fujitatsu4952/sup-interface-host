@@ -1,36 +1,39 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "target": "esnext",
+    "module": "esnext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
     "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
     ],
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
-    "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./*"
+        "./client/*"
       ],
       "@/*": [
-        "./*"
+        ".client/*"
       ]
     },
     "types": [
+      "@types/node",
       "@nuxt/types",
-      "@types/node"
-    ]
+      "vue"
+    ],
+    "resolveJsonModule": true,
   },
   "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
+    "node_modules"
   ]
 }

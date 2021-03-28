@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "supinterfacehost7e98d513": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "s3f76c5928": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
