@@ -1,5 +1,12 @@
 [
   {
+    "name": "page2",
+    "path": "/page2",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/page2.vue",
+    "chunkName": "pages/page2",
+    "_name": "_050302d3"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/index.vue",
