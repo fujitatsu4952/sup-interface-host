@@ -171,14 +171,14 @@ export async function setContext (app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"ENV":"dev","GUEST_DOMAIN":"https://dev-guest.lost-boys-sup.com","AUTH_IDEMTITY_POOL_ID":"ap-northeast-1:164076924768","AUTH_REGION":"ap-northeast-1","AUTH_USER_POOL_ID":"ap-northeast-1_3BprrmykQ","AUTH_USER_POOL_WEB_CLIENT_ID":"5o99p1jk0jm9hev3ej8nrqec0i","STORAGE_AWSS3_BUCKET":"dev-sup-gamma-host-bucket","STORAGE_AWSS3_REGION":"ap-northeast-1","STORAGE_AWSS3_BASE_URL":"https://dev-assets.lost-boys-sup.com/","STORAGE_AWSS3_MASTER_BASE_URL":"https://dev-assets.lost-boys-sup.com/","AWS_PROJECT_REGION":"ap-northeast-1","APPSYNC_GRAPHQL_ENDPOINT":"https://qslfetzdpvb63k7zvqu6p2szqi.appsync-api.ap-northeast-1.amazonaws.com/graphql","APPSYNC_REGION":"ap-northeast-1","APPSYNC_AUTHENTICATIONTYPE":"AMAZON_COGNITO_USER_POOLS","APPSYNC_APIKEY":"da2-t252fa5n2vblvnmnpnmniyi2ny"}
+      env: {"ENV":"dev","GUEST_DOMAIN":"https://dev-guest.lost-boys-sup.com","AUTH_IDEMTITY_POOL_ID":"ap-northeast-1:658a119f-c852-45e9-8b4d-a7b756c4a90b","AUTH_REGION":"ap-northeast-1","AUTH_USER_POOL_ID":"ap-northeast-1_3BprrmykQ","AUTH_USER_POOL_WEB_CLIENT_ID":"5o99p1jk0jm9hev3ej8nrqec0i","STORAGE_AWSS3_BUCKET":"dev-sup-gamma-host-bucket","STORAGE_AWSS3_REGION":"ap-northeast-1","STORAGE_AWSS3_BASE_URL":"https://dev-assets.lost-boys-sup.com/","STORAGE_AWSS3_MASTER_BASE_URL":"https://dev-assets.lost-boys-sup.com/","AWS_PROJECT_REGION":"ap-northeast-1","APPSYNC_GRAPHQL_ENDPOINT":"https://qslfetzdpvb63k7zvqu6p2szqi.appsync-api.ap-northeast-1.amazonaws.com/graphql","APPSYNC_REGION":"ap-northeast-1","APPSYNC_AUTHENTICATIONTYPE":"AMAZON_COGNITO_USER_POOLS","APPSYNC_APIKEY":"da2-t252fa5n2vblvnmnpnmniyi2ny","AWS_BUCKET_NAME":"sup-interface-host-dev","AWS_CLOUDFRONT":"E2MG4X9WJFHDO1"}
     }
     // Only set once
 
@@ -257,7 +257,7 @@ export async function setContext (app, context) {
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
-  app.context.isHMR = false
+  app.context.isHMR = Boolean(context.isHMR)
   app.context.params = app.context.route.params || {}
   app.context.query = app.context.route.query || {}
 }
@@ -275,6 +275,9 @@ export function middlewareSeries (promises, appContext) {
 export function promisify (fn, context) {
   let promise
   if (fn.length === 2) {
+      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
+        'Please switch to promises or async/await syntax')
+
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {

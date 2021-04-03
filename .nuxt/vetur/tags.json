@@ -1,5 +1,173 @@
 {
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
+  },
+  "AtomsBadgeAppBadgeQuestion": {
+    "description": "Auto imported from components/Atoms/Badge/AppBadgeQuestion.vue"
+  },
+  "AtomsBadgeAppBadgeReservationStatus": {
+    "description": "Auto imported from components/Atoms/Badge/AppBadgeReservationStatus.vue"
+  },
+  "AtomsBadgeAppBadgeSaleStatus": {
+    "description": "Auto imported from components/Atoms/Badge/AppBadgeSaleStatus.vue"
+  },
+  "AtomsButtonAppButton": {
+    "description": "Auto imported from components/Atoms/Button/AppButton.vue"
+  },
+  "AtomsButtonAppButtonAdd": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonAdd.vue"
+  },
+  "AtomsButtonAppButtonDelete": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonDelete.vue"
+  },
+  "AtomsButtonAppButtonHamburgar": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonHamburgar.vue"
+  },
+  "AtomsButtonAppButtonInfo": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonInfo.vue"
+  },
+  "AtomsButtonAppButtonMinus": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonMinus.vue"
+  },
+  "AtomsButtonAppButtonNavigation": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonNavigation.vue"
+  },
+  "AtomsButtonAppButtonPlus": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonPlus.vue"
+  },
+  "AtomsButtonAppButtonSave": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonSave.vue"
+  },
+  "AtomsButtonAppButtonTable": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonTable.vue"
+  },
+  "AtomsButtonAppButtonTransition": {
+    "description": "Auto imported from components/Atoms/Button/AppButtonTransition.vue"
+  },
+  "AtomsButtonLargeButton": {
+    "description": "Auto imported from components/Atoms/Button/LargeButton.vue"
+  },
+  "AtomsButtonMediumButton": {
+    "description": "Auto imported from components/Atoms/Button/MediumButton.vue"
+  },
+  "AtomsButtonSmallButton": {
+    "description": "Auto imported from components/Atoms/Button/SmallButton.vue"
+  },
+  "AtomsInputAppInput": {
+    "description": "Auto imported from components/Atoms/Input/AppInput.vue"
+  },
+  "AtomsInputAppInputDisplayNone": {
+    "description": "Auto imported from components/Atoms/Input/AppInputDisplayNone.vue"
+  },
+  "AtomsInputAppInputGuestInfo": {
+    "description": "Auto imported from components/Atoms/Input/AppInputGuestInfo.vue"
+  },
+  "AtomsInputAppInputNumber": {
+    "description": "Auto imported from components/Atoms/Input/AppInputNumber.vue"
+  },
+  "AtomsInputAppInputPassword": {
+    "description": "Auto imported from components/Atoms/Input/AppInputPassword.vue"
+  },
+  "AtomsInputAppInputTextarea": {
+    "description": "Auto imported from components/Atoms/Input/AppInputTextarea.vue"
+  },
+  "AtomsInputAppInputToggle": {
+    "description": "Auto imported from components/Atoms/Input/AppInputToggle.vue"
+  },
+  "AtomsInputAppInputUnderBar": {
+    "description": "Auto imported from components/Atoms/Input/AppInputUnderBar.vue"
+  },
+  "AtomsTextAppTextH1": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH1.vue"
+  },
+  "AtomsTextAppTextH2": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH2.vue"
+  },
+  "AtomsTextAppTextH3": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH3.vue"
+  },
+  "AtomsTextAppTextH4": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH4.vue"
+  },
+  "AtomsTextAppTextH5": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH5.vue"
+  },
+  "OrganismsItemsEditTemplate": {
+    "description": "Auto imported from components/Organisms/Items/EditTemplate.vue"
+  },
+  "OrganismsNotifyAppAuthMail": {
+    "description": "Auto imported from components/Organisms/Notify/AppAuthMail.vue"
+  },
+  "OrganismsNotifyAppAuthMailPolite": {
+    "description": "Auto imported from components/Organisms/Notify/AppAuthMailPolite.vue"
+  },
+  "OrganismsQuestionsQuestionTemplate": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionTemplate.vue"
+  },
+  "OrganismsTableShopList": {
+    "description": "Auto imported from components/Organisms/TableShop/List.vue"
+  },
+  "OrganismsTableShopListItem": {
+    "description": "Auto imported from components/Organisms/TableShop/ListItem.vue"
+  },
+  "TemplatesAuthErrorNotice": {
+    "description": "Auto imported from components/Templates/Auth/ErrorNotice.vue"
+  },
+  "TemplatesAuthForgotPassword": {
+    "description": "Auto imported from components/Templates/Auth/ForgotPassword.vue"
+  },
+  "TemplatesAuthInvitationSignUpForm": {
+    "description": "Auto imported from components/Templates/Auth/InvitationSignUpForm.vue"
+  },
+  "TemplatesAuthResetPassword": {
+    "description": "Auto imported from components/Templates/Auth/ResetPassword.vue"
+  },
+  "TemplatesAuthSignInForm": {
+    "description": "Auto imported from components/Templates/Auth/SignInForm.vue"
+  },
+  "TemplatesAuthSignUpForm": {
+    "description": "Auto imported from components/Templates/Auth/SignUpForm.vue"
+  },
+  "TemplatesCommonHeader": {
+    "description": "Auto imported from components/Templates/Common/header.vue"
+  },
+  "OrganismsCommonNotificationHandlerListItem": {
+    "description": "Auto imported from components/Organisms/Common/NotificationHandler/ListItem.vue"
+  },
+  "OrganismsCommonNotificationHandler": {
+    "description": "Auto imported from components/Organisms/Common/NotificationHandler/index.vue"
+  },
+  "OrganismsCommonHeaderMenuItem": {
+    "description": "Auto imported from components/Organisms/Common/header/MenuItem.vue"
+  },
+  "MoleculesAppImageItem": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/ImageItem.vue"
+  },
+  "MoleculesAppImageUploadMultipleImage": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/MultipleImage.vue"
+  },
+  "MoleculesAppImageUploadSingleImage": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/SingleImage.vue"
+  },
+  "OrganismsQuestionsQuestionImageSingle": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionImageSingle/QuestionImageSingle.vue"
+  },
+  "OrganismsQuestionsQuestionAddressInput": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionAddressInput/QuestionAddressInput.vue"
+  },
+  "OrganismsQuestionsQuestionInput": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionInput/QuestionInput.vue"
+  },
+  "OrganismsQuestionsQuestionSnsInput": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionSnsInput/QuestionSnsInput.vue"
+  },
+  "OrganismsQuestionsQuestionImageMulti": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionImageMulti/QuestionImageMulti.vue"
+  },
+  "OrganismsQuestionsQuestionToggle": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionToggle/QuestionToggle.vue"
+  },
+  "TemplatesItemsShopEditShop": {
+    "description": "Auto imported from components/Templates/Items/Shop/EditShop.vue"
   }
 }

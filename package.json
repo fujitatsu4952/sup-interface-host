@@ -23,6 +23,7 @@
     "@aws-amplify/api": "^3.2.27",
     "@aws-amplify/auth": "^3.4.27",
     "@aws-amplify/storage": "^3.3.27",
+    "@nuxt/http": "^0.6.4",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/style-resources": "^1.0.0",

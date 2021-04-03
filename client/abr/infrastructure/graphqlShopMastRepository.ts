@@ -29,6 +29,12 @@ class GraphqlShopMastRepository implements IShopMastRepository {
     @ShopMastValidator
     @Auth
     public async fetchShopMastsByCompanyID(companyID: Scalars['ID']): Promise<ShopMast[]> {
+        console.log("koko!")
+        console.log((
+            await callApi<FetchShopsByCompanyIdQuery, FetchShopsByCompanyIdQueryVariables>(queries.fetchShopsByCompanyId, {
+                companyID,
+            })
+        ))
         return (
             await callApi<FetchShopsByCompanyIdQuery, FetchShopsByCompanyIdQueryVariables>(queries.fetchShopsByCompanyId, {
                 companyID,

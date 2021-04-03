@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../client/layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -14,8 +14,11 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_cc9b8260 from 'nuxt_plugin_plugin_cc9b8260' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_httpserver_77bc5b5a from 'nuxt_plugin_httpserver_77bc5b5a' // Source: ./http.server.js (mode: 'server')
+import nuxt_plugin_http_a001c8ac from 'nuxt_plugin_http_a001c8ac' // Source: ./http.js (mode: 'all')
 import nuxt_plugin_amplify_900d1862 from 'nuxt_plugin_amplify_900d1862' // Source: ../client/plugins/amplify.ts (mode: 'client')
 import nuxt_plugin_veevalidate_1a0c172c from 'nuxt_plugin_veevalidate_1a0c172c' // Source: ../client/plugins/vee-validate.ts (mode: 'client')
+import nuxt_plugin_vuelazyload_d07c1ad4 from 'nuxt_plugin_vuelazyload_d07c1ad4' // Source: ../client/plugins/vue-lazyload.ts (mode: 'client')
 import nuxt_plugin_vclickoutside_12eb198c from 'nuxt_plugin_vclickoutside_12eb198c' // Source: ../client/plugins/v-click-outside.ts (mode: 'client')
 
 // Component: <ClientOnly>
@@ -210,12 +213,24 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_cc9b8260(app.context, inject)
   }
 
+  if (process.server && typeof nuxt_plugin_httpserver_77bc5b5a === 'function') {
+    await nuxt_plugin_httpserver_77bc5b5a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_http_a001c8ac === 'function') {
+    await nuxt_plugin_http_a001c8ac(app.context, inject)
+  }
+
   if (process.client && typeof nuxt_plugin_amplify_900d1862 === 'function') {
     await nuxt_plugin_amplify_900d1862(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_veevalidate_1a0c172c === 'function') {
     await nuxt_plugin_veevalidate_1a0c172c(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuelazyload_d07c1ad4 === 'function') {
+    await nuxt_plugin_vuelazyload_d07c1ad4(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vclickoutside_12eb198c === 'function') {

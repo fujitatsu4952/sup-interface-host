@@ -1,16 +1,80 @@
 [
   {
-    "name": "page2",
-    "path": "/page2",
-    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/page2.vue",
-    "chunkName": "pages/page2",
-    "_name": "_050302d3"
+    "name": "auth-forgotpassword",
+    "path": "/auth/forgotpassword",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/auth/forgotpassword.vue",
+    "chunkName": "pages/auth/forgotpassword"
+  },
+  {
+    "name": "auth-resetpassword",
+    "path": "/auth/resetpassword",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/auth/resetpassword.vue",
+    "chunkName": "pages/auth/resetpassword"
+  },
+  {
+    "name": "auth-signin",
+    "path": "/auth/signin",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/auth/signin.vue",
+    "chunkName": "pages/auth/signin"
+  },
+  {
+    "name": "auth-signup",
+    "path": "/auth/signup",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/auth/signup.vue",
+    "chunkName": "pages/auth/signup"
+  },
+  {
+    "name": "auth-verify",
+    "path": "/auth/verify",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/auth/verify.vue",
+    "chunkName": "pages/auth/verify"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_ba8a06bc"
+    "chunkName": "pages/index"
+  },
+  {
+    "name": "shopID",
+    "path": "/:shopID",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/index.vue",
+    "chunkName": "pages/_shopID/index"
+  },
+  {
+    "name": "shopID-event",
+    "path": "/:shopID/event",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/event/index.vue",
+    "chunkName": "pages/_shopID/event/index"
+  },
+  {
+    "name": "shopID-plan",
+    "path": "/:shopID/plan",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/plan/index.vue",
+    "chunkName": "pages/_shopID/plan/index"
+  },
+  {
+    "name": "shopID-event-newEvent",
+    "path": "/:shopID/event/newEvent",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/event/newEvent.vue",
+    "chunkName": "pages/_shopID/event/newEvent"
+  },
+  {
+    "name": "shopID-plan-newPlan",
+    "path": "/:shopID/plan/newPlan",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/plan/newPlan.vue",
+    "chunkName": "pages/_shopID/plan/newPlan"
+  },
+  {
+    "name": "shopID-event-resourceID",
+    "path": "/:shopID/event/:resourceID",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/event/_resourceID/index.vue",
+    "chunkName": "pages/_shopID/event/_resourceID/index"
+  },
+  {
+    "name": "shopID-plan-planID",
+    "path": "/:shopID/plan/:planID",
+    "component": "/Users/fujiitatsuya/Desktop/SUP/sup-interface-host/client/pages/_shopID/plan/_planID/index.vue",
+    "chunkName": "pages/_shopID/plan/_planID/index"
   }
 ]

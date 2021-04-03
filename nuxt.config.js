@@ -1,3 +1,8 @@
+const envPath = `config/.env.${process.env.ENV || 'dev'}`;
+require('dotenv').config({
+  path: envPath,
+});
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -46,6 +51,7 @@ export default {
       ssr: false,
     },
     { src: '~/plugins/vee-validate.ts', ssr: false },
+    { src: '~/plugins/vue-lazyload.ts', ssr: false },
     { src: '~/plugins/v-click-outside.ts', ssr: false },
   ],
 
@@ -60,17 +66,28 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/dotenv',
+      {
+        filename: `../${envPath}`,
+      },
+    ],
+    '@nuxt/http',
+    '@nuxtjs/style-resources'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  styleResources: {
+    stylus: ['~/assets/stylus/_variables.styl'],
   },
   env: {
     ENV: process.env.ENV,
     // Master
     GUEST_DOMAIN: process.env.GUEST_DOMAIN || 'https://dev-guest.lost-boys-sup.com',
     // Cognito
-    AUTH_IDEMTITY_POOL_ID: process.env.AUTH_IDEMTITY_POOL_ID || 'ap-northeast-1:164076924768',
+    AUTH_IDEMTITY_POOL_ID: process.env.AUTH_IDEMTITY_POOL_ID || 'ap-northeast-1:658a119f-c852-45e9-8b4d-a7b756c4a90b',
     AUTH_REGION: process.env.AUTH_REGION || 'ap-northeast-1',
     AUTH_USER_POOL_ID: process.env.AUTH_USER_POOL_ID || 'ap-northeast-1_3BprrmykQ',
     AUTH_USER_POOL_WEB_CLIENT_ID: process.env.AUTH_USER_POOL_WEB_CLIENT_ID || '5o99p1jk0jm9hev3ej8nrqec0i',

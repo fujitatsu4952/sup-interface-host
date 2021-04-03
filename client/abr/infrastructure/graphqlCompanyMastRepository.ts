@@ -33,7 +33,7 @@ class GraphqlCompanyMastRepository implements ICompanyRepository {
             input: companyMast,
             action: MutationFunctionNameHost.addCompanyMast,
         },
-        )).addCompanyMast as CompanyMast;
+        )).addCompanyMast;
     }
     @CompanyMastValidator
     @Auth

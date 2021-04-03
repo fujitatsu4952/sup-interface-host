@@ -1,0 +1,131 @@
+// 各Stylusの変数
+// 記法のルールはスネーク。
+//大枠のことをcontainerと呼ぶ
+// z-index
+$notification = 110;
+$loading = 100;
+$modal = 90;
+$sidemenu = 80;
+$reservation-table-template__head-row-th = 2;
+$reservation-table-template__head-row-first-of-type = 3;
+$reservation-table-template = 4;
+
+// Color
+$primary=#e9bcbd;
+$background_color_default = #f7f7f7
+$color-background-sidemenu = #ffffff
+$color-background-editor = #ffffff;
+$color-button-background-hover = #4c4c4c
+
+$boundaryBlack=#e4e4e4;
+
+$infoColor=#4c4c4c;
+$warningColor=yellow;
+$errorColor=#e9bcbd + rgb(100, 0, 0) - rgb(0, 50, 50);
+
+$requiredColor=#e9bcbd - #303030;
+
+// backgroundcolor
+$backgournd_color__auth_contents_container=#ffffff
+
+// textColor
+
+
+// fontSize
+
+
+// height
+
+
+// width
+$width_Units_Questions_input_container=250px;
+$width_Units_Questions_select_box_container=150px;
+$min_width_auth_contents=700px;
+$min_width_auth_contents_mobile=100px;
+$percent_width_sign_button_container= 60%;
+
+// Shadow
+$defaultShadow=2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+$imageShadow=1px 1px 5px 0 rgba(0,0,0,.2);
+
+// border
+$border_radius_auth_contents_container=10px;
+
+// Padding
+$reservationIndentPadding=0 0 0 50px;
+$reservationIndentPadding_mobile=0 0 0 0px;
+$padding_auth_container=50px 0 0 0;
+$padding_auth_contents_container=20px;
+$padding_auth_contents_container_mobile=20px 10px;
+
+// Margin
+$margin_Units_Questions_container=0 0 30px 0;
+$margin_logo_container=0 0 20px 0;
+$margin_sign_input_container=35px 0;
+$margin_notification=3%;
+
+// position
+$position_top_notification=0;
+$position_right_notification=0;
+
+
+// 基本色
+$font=#4c4c4c
+$gray=#aaaaaa
+$Lblue=#a4ebf3
+$Mblue=#ccf2f4
+$Sblue=#f4f9f9
+
+// =======================================================
+//そのページに来て押されることが目的になりうるボタン。
+$button_primary_base {
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid $boundaryBlack;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    padding: 0 15px;
+    &:hover {
+        background: #4c4c4c;
+        color: #fff;
+        }
+    &:disabled {
+        background: transparent;
+        &:hover {
+        background: transparent;
+        color: rgba(16, 16, 16, 0.3)
+        }
+    }
+}
+
+//そのページ内において、目的になり得ないいボタン
+$button_secondary_base {
+    font-size: 16px;
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    border-radius: 50%;
+    &:hover {
+        background: #4c4c4c;
+        color: #fff;
+        img {
+            filter: brightness(0) invert(1);
+            }
+        }
+    &:disabled {
+        background: #fff;
+        &:hover {
+        background: #fff;
+        color: rgba(16, 16, 16, 0.3)
+        img {
+            filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+// =======================================================
