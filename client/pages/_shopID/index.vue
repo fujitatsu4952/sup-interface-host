@@ -25,7 +25,7 @@ export default class ShopPage extends Vue {
     }
 
     @AsyncLoadingAndErrorHandle() public async register() {
-		this.shopMast = await shopInteractor.updateMast(this.shopMast!, undefined);
+		  this.shopMast = await shopInteractor.updateMast(this.shopMast!, undefined);
     }
 }
 </script>

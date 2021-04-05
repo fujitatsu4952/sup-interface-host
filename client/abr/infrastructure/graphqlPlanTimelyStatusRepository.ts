@@ -1,5 +1,5 @@
 import { IPlanTimelyStatusRepository, DailyStatusUpdateObject, PlanTimelyStatus, Scalars, MutationFunctionNameHost, PlanTimelyStatusValidator, DailyStatusSoldNumUpdateObject, StatusUpdateInput } from 'sup_abr';
-import { callApi, CACHE_TIME_MILLI, DATE_SUM } from './apiClient';
+import { callApi, CACHE_TIME_MILLI } from './apiClient';
 import { AddPlanTimelyStatusByShopIdAndPlanIdAndDataMutation, AddPlanTimelyStatusByShopIdAndPlanIdAndDataMutationVariables, UpdatePlanTimelyStatusByShopIdAndPlanIdAndDataMutation, UpdatePlanTimelyStatusByShopIdAndPlanIdAndDataMutationVariables, FetchPlanDailyStatusByShopIdAndStartAndEndQuery, FetchPlanDailyStatusByShopIdAndStartAndEndQueryVariables, FetchPlanTimelyStatusByShopIdAndResourceIdQuery, FetchPlanTimelyStatusByShopIdAndResourceIdQueryVariables } from '~/amplify/API';
 import { PlanTimelyStatusCacheAdaptor } from 'sup_abr';
 import * as queries from '~/amplify/graphql/queries';
@@ -29,13 +29,15 @@ class GraphqlPlanTimelyStatusRepository implements IPlanTimelyStatusRepository {
     @PlanTimelyStatusValidator
     @Auth
     public async fetchStartTime(shopID: Scalars['ID'], startDtTime: Scalars['AWSDateTime'], endDtTime: Scalars['AWSDateTime']): Promise<PlanTimelyStatus[]> {
-        const res = (
+        console.log(shopID, startDtTime, endDtTime);
+        const res: PlanTimelyStatus[] = (
             await callApi<FetchPlanDailyStatusByShopIdAndStartAndEndQuery, FetchPlanDailyStatusByShopIdAndStartAndEndQueryVariables>(queries.fetchPlanDailyStatusByShopIdAndStartAndEnd, {
                 shopID,
                 startDtTime,
                 endDtTime
             })
         ).fetchPlanDailyStatusByShopIDAndStartAndEnd;
+        console.log(res)
         return res
     }
 
@@ -75,4 +77,4 @@ class GraphqlPlanTimelyStatusRepository implements IPlanTimelyStatusRepository {
 }
 
 const repo = new GraphqlPlanTimelyStatusRepository();
-export const planTimelyStatusRepository = new PlanTimelyStatusCacheAdaptor(repo, CACHE_TIME_MILLI, DATE_SUM, 300, repo.fetchStartTime);
+export const planTimelyStatusRepository = new PlanTimelyStatusCacheAdaptor(repo, CACHE_TIME_MILLI, -30, 300, repo.fetchStartTime);

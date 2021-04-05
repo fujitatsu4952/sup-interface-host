@@ -17,6 +17,7 @@ export default class Default extends Vue {}
 </script>
 <style lang="stylus" scoped>
 .default {
-    background-color: $Sblue
+    background-color: $Sblue;
+    min-height: calc(100vh);
 }
 </style>

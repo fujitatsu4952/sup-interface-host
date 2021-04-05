@@ -19,14 +19,20 @@ import AppText from '~/components/Atoms/Text/AppTextH4.vue'
 	},
 })
 export default class headerMenuItem extends Vue {
-    @Prop() path!: string;
+    @Prop() public path!: string;
     @Prop({required: true}) menu!: string;
     public isActive: boolean = false
 
     @Watch('$route')
     public routerWatcher() {
-        console.log(this.$route.name)
-        this.isActive = this.path === this.$route.name;
+        if (this.$route.name) {
+            const partialMatch = this.$route.name.match(this.path + '/*');
+            this.isActive = !!partialMatch;
+            if (this.path === 'shopID') {
+                this.isActive = this.$route.name === 'shopID';
+            }
+        }
+
 
     }
 

@@ -7,11 +7,9 @@ import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import _6f6c098b from '../client/layouts/default.vue'
-import _fd594800 from '../client/layouts/newShop.vue'
-import _4731fb9e from '../client/layouts/onlypage.vue'
 import _1627f0b5 from '../client/layouts/shopDefault.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b),"_newShop": sanitizeComponent(_fd594800),"_onlypage": sanitizeComponent(_4731fb9e),"_shopDefault": sanitizeComponent(_1627f0b5) }
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_shopDefault": sanitizeComponent(_1627f0b5) }
 
 export default {
   render (h, props) {

@@ -208,8 +208,8 @@ export const fetchPlanMastByShopIdAndPlanId = /* GraphQL */ `
 export const fetchPlanDailyStatusByShopIdAndStartAndEnd = /* GraphQL */ `
   query FetchPlanDailyStatusByShopIdAndStartAndEnd(
     $shopID: ID!
-    $startDtTime: AWSDateTime!
-    $endDtTime: AWSDateTime!
+    $startDtTime: String!
+    $endDtTime: String!
   ) {
     fetchPlanDailyStatusByShopIDAndStartAndEnd(
       shopID: $shopID

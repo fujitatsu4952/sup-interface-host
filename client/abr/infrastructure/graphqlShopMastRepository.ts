@@ -22,19 +22,13 @@ class GraphqlShopMastRepository implements IShopMastRepository {
         return (
             await callApi<UpdateShopMastMutation, UpdateShopMastMutationVariables>(mutation.updateShopMast, {
                 input: shopMast,
-                action: MutationFunctionNameHost.updateCompanyMast,
+                action: MutationFunctionNameHost.updateShopMast,
             })
         ).updateShopMast;
     }
     @ShopMastValidator
     @Auth
     public async fetchShopMastsByCompanyID(companyID: Scalars['ID']): Promise<ShopMast[]> {
-        console.log("koko!")
-        console.log((
-            await callApi<FetchShopsByCompanyIdQuery, FetchShopsByCompanyIdQueryVariables>(queries.fetchShopsByCompanyId, {
-                companyID,
-            })
-        ))
         return (
             await callApi<FetchShopsByCompanyIdQuery, FetchShopsByCompanyIdQueryVariables>(queries.fetchShopsByCompanyId, {
                 companyID,
