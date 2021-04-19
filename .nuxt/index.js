@@ -80,7 +80,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"はまらしゃかすす湖 SUP","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"はまらしゃかすす湖 SUPD2Cプラットフォームです。"},{"hid":"keywords","name":"keywords","content":"SUP,はまらしゃかすす湖","xml:lang":"ja","lang":"ja"},{"hid":"og:site_name","property":"og:site_name","content":"はまらしゃかすす湖 SUP"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Lost Boys & 管理画面","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Lost Boys & 管理画面"},{"hid":"keywords","name":"keywords","content":"Lost Boys & 管理画面","xml:lang":"ja","lang":"ja"},{"hid":"og:site_name","property":"og:site_name","content":"Lost Boys & 管理画面"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,

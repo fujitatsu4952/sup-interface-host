@@ -6,8 +6,10 @@
                 <edit-template title="ショップ編集">
                     <question-input questionTitle="ショップ名" name="ショップ名" rule="required" v-model="localValue.name" :required="true" :borderTop="false" />
                     <question-input questionTitle="キャッチコピー" name="キャッチコピー" rule="required" v-model="localValue.catchCopy" :required="true" />
-                    <question-image-simple questionTitle="ロゴイメージ" name="ロゴイメージ" rule="required" v-model="localValue.logoImage" :file.sync="logoImage" :required="true"  />
                     <question-image-simple questionTitle="キービジュアル" name="キービジュアル" rule="required" v-model="localValue.keyVisual" :file.sync="mainKeyVisual" :required="true"  />
+                    <question-image-simple questionTitle="About Us画像" name="About Us画像" rule="required" v-model="localValue.logoImage" :file.sync="logoImage" :required="true"  />
+                    <question-textare questionTitle="About Us説明" name="About Us説明" rule="required" v-model="localValue.aboutUsText" />
+                    <question-textare questionTitle="ステートメント" name="statement" rule="required" v-model="localValue.statement" />
                     <question-image-multi questionTitle="ギャラリー" name="ギャラリー" v-model="localValue.keyVisuals" :files.sync="keyVisuals" />
                     <question-address-input questionTitle="住所" v-model="localValue.address" />
                     <question-input questionTitle="電話番号" name="電話番号" v-model="localValue.tel" />
@@ -30,6 +32,7 @@ import { ShopMast } from 'sup_abr';
 // components
 import EditTemplate from '~/components/Organisms/Items/EditTemplate.vue';
 import AppButton from '~/components/Atoms/Button/AppButton.vue';
+import QuestionTextare from '~/components/Organisms/Questions/QuestionTextarea/QuestionTextarea.vue';
 import QuestionInput from '~/components/Organisms/Questions/QuestionInput/QuestionInput.vue';
 import QuestionImageMulti from '~/components/Organisms/Questions/QuestionImageMulti/QuestionImageMulti.vue';
 import QuestionImageSimple from '~/components/Organisms/Questions/QuestionImageSingle/QuestionImageSingle.vue';
@@ -43,6 +46,7 @@ import { AsyncLoadingAndErrorHandle } from '~/abr/decorator/baseDecorator';
     components: {
         EditTemplate,
         AppButton,
+        QuestionTextare,
         QuestionInput,
         QuestionImageMulti,
         QuestionImageSimple,

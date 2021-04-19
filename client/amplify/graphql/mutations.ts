@@ -74,7 +74,9 @@ export const addShopMast = /* GraphQL */ `
         mimeType
         fileName
       }
+      aboutUsText
       catchCopy
+      statement
       createdAt
       updatedAt
     }
@@ -126,7 +128,9 @@ export const updateShopMast = /* GraphQL */ `
         mimeType
         fileName
       }
+      aboutUsText
       catchCopy
+      statement
       createdAt
       updatedAt
     }

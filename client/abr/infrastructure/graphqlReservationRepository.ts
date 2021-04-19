@@ -1,5 +1,5 @@
 import { IReservationRepository, Scalars, ReservationObject, ReservationObjectInput } from 'sup_abr';
-import { callApi, getObjects, CACHE_TIME_MILLI, DATE_SUM } from './apiClient';
+import { callApi, CACHE_TIME_MILLI, DATE_SUM } from './apiClient';
 import {
     FetchReservationObjectByShopIdAndReservationIdQuery,
     FetchReservationObjectByShopIdAndReservationIdQueryVariables
@@ -25,7 +25,10 @@ class GraphqlReservationRepository implements IReservationRepository {
             shopID,
             reservationID
         })).fetchReservationObjectByShopIDAndReservationID;
-        return (await getObjects<ReservationObject>([retval]))[0];
+        return retval
+        // if(retval) {
+        //     return (await getObjects<ReservationObject>([retval]))[0];
+        // }
     }
 
 }

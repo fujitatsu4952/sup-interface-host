@@ -5,7 +5,7 @@
 	import { hostUserAuthInteractor } from '~/amplify/auth';
 
 	@Component({
-		layout: 'onlypage',
+		layout: "auth",
 	})
 	export default class VerifyEmail extends Vue {
 		@AsyncLoadingAndErrorHandle() public async created() {

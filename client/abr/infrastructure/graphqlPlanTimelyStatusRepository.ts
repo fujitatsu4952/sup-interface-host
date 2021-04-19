@@ -37,7 +37,6 @@ class GraphqlPlanTimelyStatusRepository implements IPlanTimelyStatusRepository {
                 endDtTime
             })
         ).fetchPlanDailyStatusByShopIDAndStartAndEnd;
-        console.log(res)
         return res
     }
 

@@ -19,7 +19,7 @@ import { AsyncLoadingAndErrorHandle } from "~/abr/decorator/baseDecorator";
 import { Component, Vue } from "nuxt-property-decorator";
 import ResetPassword from "@/components/Templates/Auth/ResetPassword.vue";
 @Component({
-    layout: "onlypage",
+    layout: "auth",
     components: {
         ResetPassword,
     },

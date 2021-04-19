@@ -21,7 +21,7 @@ import ForgotPassword from "~/components/Templates/Auth/ForgotPassword.vue";
 import AppAuthMail from "~/components/Organisms/Notify/AppAuthMail.vue";
 
 @Component({
-    layout: "onlypage",
+    layout: "auth",
     components: {
         ForgotPassword,
         AppAuthMail,

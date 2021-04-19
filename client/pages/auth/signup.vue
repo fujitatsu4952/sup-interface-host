@@ -17,7 +17,7 @@ import SignUpForm from '~/components/Templates/Auth/SignUpForm.vue';
 import AppAuthMail from '~/components/Organisms/Notify/AppAuthMail.vue';
 
 @Component({
-    layout: 'onlypage',
+    layout: "auth",
     components: {
         SignUpForm,
         AppAuthMail,

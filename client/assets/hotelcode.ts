@@ -1,0 +1,1 @@
+export const hotelCode = '1788874583949'

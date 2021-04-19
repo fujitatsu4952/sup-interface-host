@@ -25,7 +25,7 @@ import { Component, Vue } from 'nuxt-property-decorator';
 import SignInForm from '~/components/Templates/Auth/SignInForm.vue';
 
 @Component({
-    layout: 'onlypage',
+    layout: "auth",
     components: {
         SignInForm,
     },

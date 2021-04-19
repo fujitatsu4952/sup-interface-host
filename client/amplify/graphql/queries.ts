@@ -60,7 +60,9 @@ export const fetchShopsByCompanyId = /* GraphQL */ `
         mimeType
         fileName
       }
+      aboutUsText
       catchCopy
+      statement
       createdAt
       updatedAt
     }
@@ -109,7 +111,9 @@ export const fetchShopMastByShopId = /* GraphQL */ `
         mimeType
         fileName
       }
+      aboutUsText
       catchCopy
+      statement
       createdAt
       updatedAt
     }
@@ -260,14 +264,36 @@ export const fetchReservationObjectByShopIdAndReservationId = /* GraphQL */ `
     ) {
       shopID
       reservationID
-      mast {
-        bucket
-        keyName
-        region
-        mimeType
-        fileName
+      plan {
+        shopID
+        resourceID
+        planID
+        name
+        startTime
+        endTime
+        amount
+        price {
+          currencyType
+          amount
+        }
+        createdAt
       }
-      date
+      createdAt
+      canceledAt
+      startTime
+      endTime
+      peopleNum
+      guestName
+      guestNameKana
+      guestEmail
+      guestPostalCode
+      guestAddress
+      guestTel
+      guestFreeMessage
+      totalPrice {
+        currencyType
+        amount
+      }
     }
   }
 `;

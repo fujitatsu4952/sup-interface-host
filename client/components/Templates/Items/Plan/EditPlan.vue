@@ -4,6 +4,7 @@
         <validation-observer v-slot="{ invalid }">
             <div class="edit_plan">
                 <edit-template title="ショップ編集">
+                    {{localValue}}
                     <question-input questionTitle="プラン名" name="プラン名" rule="required" v-model="localValue.name" :required="true" :borderTop="false" />
                     <question-input questionTitle="キャッチコピー" name="キャッチコピー" rule="required" v-model="localValue.catchCopy" :required="true" />
                     <question-textare questionTitle="説明" name="説明" rule="required" v-model="localValue.explain" />

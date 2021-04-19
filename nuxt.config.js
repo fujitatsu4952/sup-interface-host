@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'はまらしゃかすす湖 SUP',
+    title: 'Lost Boys & 管理画面',
     htmlAttrs: {
       lang: 'en'
     },
@@ -19,19 +19,19 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'はまらしゃかすす湖 SUPD2Cプラットフォームです。',
+        content: 'Lost Boys & 管理画面',
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'SUP,はまらしゃかすす湖',
+        content: 'Lost Boys & 管理画面',
         'xml:lang': 'ja',
         lang: 'ja',
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'はまらしゃかすす湖 SUP',
+        content: 'Lost Boys & 管理画面',
       },
     ],
     link: [
