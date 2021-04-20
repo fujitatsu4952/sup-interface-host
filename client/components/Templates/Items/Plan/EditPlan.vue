@@ -4,16 +4,16 @@
         <validation-observer v-slot="{ invalid }">
             <div class="edit_plan">
                 <edit-template title="ショップ編集">
-                    {{localValue}}
                     <question-input questionTitle="プラン名" name="プラン名" rule="required" v-model="localValue.name" :required="true" :borderTop="false" />
-                    <question-input questionTitle="キャッチコピー" name="キャッチコピー" rule="required" v-model="localValue.catchCopy" :required="true" />
+                    <question-input questionTitle="一言紹介" name="一言紹介" rule="required" v-model="localValue.catchCopy" :required="true" />
                     <question-textare questionTitle="説明" name="説明" rule="required" v-model="localValue.explain" />
                     <question-image-simple questionTitle="キービジュアル" name="キービジュアル" rule="required" v-model="localValue.mainKeyVisual" :file.sync="mainKeyVisual" :required="true"  />
-                    <question-image-multi questionTitle="ギャラリー" name="ギャラリー" v-model="localValue.keyVisuals" :files.sync="keyVisuals" />
+                    <question-input-color questionTitle="キーカラー" v-model="localValue.color" beforeText="" afterText="円で販売する" />
+                    <!-- <question-image-multi questionTitle="ギャラリー" name="ギャラリー" v-model="localValue.keyVisuals" :files.sync="keyVisuals" /> -->
                     <question-address-input questionTitle="住所" v-model="localValue.address" />
-                    <question-input-number questionTitle="掲載順" v-model="localValue.sortNum" beforeText="掲載順位を" afterText="番目にする" />
+                    <!-- <question-input-number questionTitle="掲載順" v-model="localValue.sortNum" beforeText="掲載順位を" afterText="番目にする" /> -->
                     <question-input-number questionTitle="販売価格" v-model="localValue.price.amount" beforeText="" afterText="円で販売する" />
-                    <question-toggle questionTitle="販売を開始" question="販売を開始する" name="ショップ販売" v-model="localValue.inSale"  />
+                    <question-toggle questionTitle="販売を開始" question="販売を開始する" name="プラン販売" v-model="localValue.inSale"  />
                 </edit-template>
             </div>
             <div class="edit_save_button">
@@ -31,6 +31,7 @@ import { PlanMast } from 'sup_abr';
 import EditTemplate from '~/components/Organisms/Items/EditTemplate.vue';
 import AppButton from '~/components/Atoms/Button/AppButton.vue';
 import QuestionInput from '~/components/Organisms/Questions/QuestionInput/QuestionInput.vue';
+import QuestionInputColor from '~/components/Organisms/Questions/QuestionColorInput/QuestionColorInput.vue';
 import QuestionTextare from '~/components/Organisms/Questions/QuestionTextarea/QuestionTextarea.vue';
 import QuestionInputNumber from '~/components/Organisms/Questions/QuestionNumberInput/QuestionNumber.vue';
 import QuestionImageMulti from '~/components/Organisms/Questions/QuestionImageMulti/QuestionImageMulti.vue';
@@ -46,6 +47,7 @@ import { AsyncLoadingAndErrorHandle } from '~/abr/decorator/baseDecorator';
         EditTemplate,
         AppButton,
         QuestionInput,
+        QuestionInputColor,
         QuestionTextare,
         QuestionInputNumber,
         QuestionImageMulti,
@@ -55,7 +57,7 @@ import { AsyncLoadingAndErrorHandle } from '~/abr/decorator/baseDecorator';
         QuestionToggle
     },
 })
-export default class ShopEdit extends Vue {
+export default class PlanEdit extends Vue {
     public mainKeyVisual: File | null = null;
     public keyVisuals: Array<File | S3Object> | null = null;
     public logoImage: File | null = null;

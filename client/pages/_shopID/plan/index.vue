@@ -23,7 +23,8 @@ export default class PlanListPage extends Vue {
 
 	@AsyncLoadingAndErrorHandle() public async created() {
 		const shopID = this.$route.params.shopID;
-		this.planMasts = await planInteractor.fetchPlansByShopID(shopID, undefined)
+		this.planMasts = (await planInteractor.fetchPlansByShopID(shopID, undefined)).filter((item) => {return !item.deletedAt})
+
 	}
 }
 </script>

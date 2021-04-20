@@ -74,7 +74,7 @@ export default class ClickEachDate extends Vue {
     }
 
     public async init() {
-        const allPlan = (await planInteractor.fetchPlansByShopID(this.$route.params.shopID, undefined)).filter((plan) => { return plan.inSale})
+        const allPlan = (await planInteractor.fetchPlansByShopID(this.$route.params.shopID, undefined)).filter((plan) => { return plan.inSale && !plan.deletedAt})
         this.availablePlans = allPlan.map((plan) => {
             return {
                 key: plan.name,

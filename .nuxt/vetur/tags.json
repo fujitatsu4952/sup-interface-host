@@ -53,39 +53,6 @@
   "AtomsButtonSmallButton": {
     "description": "Auto imported from components/Atoms/Button/SmallButton.vue"
   },
-  "TemplatesAuthErrorNotice": {
-    "description": "Auto imported from components/Templates/Auth/ErrorNotice.vue"
-  },
-  "TemplatesAuthForgotPassword": {
-    "description": "Auto imported from components/Templates/Auth/ForgotPassword.vue"
-  },
-  "TemplatesAuthInvitationSignUpForm": {
-    "description": "Auto imported from components/Templates/Auth/InvitationSignUpForm.vue"
-  },
-  "TemplatesAuthResetPassword": {
-    "description": "Auto imported from components/Templates/Auth/ResetPassword.vue"
-  },
-  "TemplatesAuthSignInForm": {
-    "description": "Auto imported from components/Templates/Auth/SignInForm.vue"
-  },
-  "TemplatesAuthSignUpForm": {
-    "description": "Auto imported from components/Templates/Auth/SignUpForm.vue"
-  },
-  "AtomsTextAppTextH1": {
-    "description": "Auto imported from components/Atoms/Text/AppTextH1.vue"
-  },
-  "AtomsTextAppTextH2": {
-    "description": "Auto imported from components/Atoms/Text/AppTextH2.vue"
-  },
-  "AtomsTextAppTextH3": {
-    "description": "Auto imported from components/Atoms/Text/AppTextH3.vue"
-  },
-  "AtomsTextAppTextH4": {
-    "description": "Auto imported from components/Atoms/Text/AppTextH4.vue"
-  },
-  "AtomsTextAppTextH5": {
-    "description": "Auto imported from components/Atoms/Text/AppTextH5.vue"
-  },
   "AtomsInputAppInput": {
     "description": "Auto imported from components/Atoms/Input/AppInput.vue"
   },
@@ -110,8 +77,38 @@
   "AtomsInputAppInputUnderBar": {
     "description": "Auto imported from components/Atoms/Input/AppInputUnderBar.vue"
   },
-  "TemplatesCommonHeader": {
-    "description": "Auto imported from components/Templates/Common/header.vue"
+  "AtomsTextAppTextH1": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH1.vue"
+  },
+  "AtomsTextAppTextH2": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH2.vue"
+  },
+  "AtomsTextAppTextH3": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH3.vue"
+  },
+  "AtomsTextAppTextH4": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH4.vue"
+  },
+  "AtomsTextAppTextH5": {
+    "description": "Auto imported from components/Atoms/Text/AppTextH5.vue"
+  },
+  "MoleculesAppImageItem": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/ImageItem.vue"
+  },
+  "MoleculesAppImageUploadMultipleImage": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/MultipleImage.vue"
+  },
+  "MoleculesAppImageUploadSingleImage": {
+    "description": "Auto imported from components/Molecules/AppImageUpload/SingleImage.vue"
+  },
+  "MoleculesAppSelectBoxList": {
+    "description": "Auto imported from components/Molecules/AppSelectBox/List.vue"
+  },
+  "MoleculesAppSelectBoxListForCardInput": {
+    "description": "Auto imported from components/Molecules/AppSelectBox/ListForCardInput.vue"
+  },
+  "MoleculesAppSelectBoxListItem": {
+    "description": "Auto imported from components/Molecules/AppSelectBox/ListItem.vue"
   },
   "OrganismsEventReadCalendar": {
     "description": "Auto imported from components/Organisms/Event/ReadCalendar.vue"
@@ -125,41 +122,8 @@
   "OrganismsNotifyAppAuthMailPolite": {
     "description": "Auto imported from components/Organisms/Notify/AppAuthMailPolite.vue"
   },
-  "MoleculesAppImageItem": {
-    "description": "Auto imported from components/Molecules/AppImageUpload/ImageItem.vue"
-  },
-  "MoleculesAppImageUploadMultipleImage": {
-    "description": "Auto imported from components/Molecules/AppImageUpload/MultipleImage.vue"
-  },
-  "MoleculesAppImageUploadSingleImage": {
-    "description": "Auto imported from components/Molecules/AppImageUpload/SingleImage.vue"
-  },
   "OrganismsQuestionsQuestionTemplate": {
     "description": "Auto imported from components/Organisms/Questions/QuestionTemplate.vue"
-  },
-  "OrganismsTableShopList": {
-    "description": "Auto imported from components/Organisms/TableShop/List.vue"
-  },
-  "OrganismsTableShopListItem": {
-    "description": "Auto imported from components/Organisms/TableShop/ListItem.vue"
-  },
-  "TemplatesItemsPlanEditPlan": {
-    "description": "Auto imported from components/Templates/Items/Plan/EditPlan.vue"
-  },
-  "TemplatesItemsPlanListPlan": {
-    "description": "Auto imported from components/Templates/Items/Plan/ListPlan.vue"
-  },
-  "TemplatesItemsShopEditShop": {
-    "description": "Auto imported from components/Templates/Items/Shop/EditShop.vue"
-  },
-  "OrganismsCommonNotificationHandlerListItem": {
-    "description": "Auto imported from components/Organisms/Common/NotificationHandler/ListItem.vue"
-  },
-  "OrganismsCommonNotificationHandler": {
-    "description": "Auto imported from components/Organisms/Common/NotificationHandler/index.vue"
-  },
-  "TemplatesItemsEventCalendar": {
-    "description": "Auto imported from components/Templates/Items/Event/Calendar.vue"
   },
   "OrganismsTablePlanList": {
     "description": "Auto imported from components/Organisms/TablePlan/PlanList.vue"
@@ -167,14 +131,41 @@
   "OrganismsTablePlanListItem": {
     "description": "Auto imported from components/Organisms/TablePlan/PlanListItem.vue"
   },
-  "MoleculesAppSelectBoxList": {
-    "description": "Auto imported from components/Molecules/AppSelectBox/List.vue"
+  "OrganismsTableShopList": {
+    "description": "Auto imported from components/Organisms/TableShop/List.vue"
   },
-  "MoleculesAppSelectBoxListForCardInput": {
-    "description": "Auto imported from components/Molecules/AppSelectBox/ListForCardInput.vue"
+  "OrganismsTableShopListItem": {
+    "description": "Auto imported from components/Organisms/TableShop/ListItem.vue"
   },
-  "MoleculesAppSelectBoxListItem": {
-    "description": "Auto imported from components/Molecules/AppSelectBox/ListItem.vue"
+  "TemplatesAuthErrorNotice": {
+    "description": "Auto imported from components/Templates/Auth/ErrorNotice.vue"
+  },
+  "TemplatesAuthForgotPassword": {
+    "description": "Auto imported from components/Templates/Auth/ForgotPassword.vue"
+  },
+  "TemplatesAuthInvitationSignUpForm": {
+    "description": "Auto imported from components/Templates/Auth/InvitationSignUpForm.vue"
+  },
+  "TemplatesAuthResetPassword": {
+    "description": "Auto imported from components/Templates/Auth/ResetPassword.vue"
+  },
+  "TemplatesAuthSignInForm": {
+    "description": "Auto imported from components/Templates/Auth/SignInForm.vue"
+  },
+  "TemplatesAuthSignUpForm": {
+    "description": "Auto imported from components/Templates/Auth/SignUpForm.vue"
+  },
+  "TemplatesCommonHeader": {
+    "description": "Auto imported from components/Templates/Common/header.vue"
+  },
+  "OrganismsCommonNotificationHandlerListItem": {
+    "description": "Auto imported from components/Organisms/Common/NotificationHandler/ListItem.vue"
+  },
+  "OrganismsCommonNotificationHandler": {
+    "description": "Auto imported from components/Organisms/Common/NotificationHandler/index.vue"
+  },
+  "OrganismsCommonHeaderMenuItem": {
+    "description": "Auto imported from components/Organisms/Common/header/MenuItem.vue"
   },
   "OrganismsEventPartsClickDateEach": {
     "description": "Auto imported from components/Organisms/Event/Parts/ClickDateEach.vue"
@@ -185,14 +176,17 @@
   "OrganismsEventPartsReadWeekDays": {
     "description": "Auto imported from components/Organisms/Event/Parts/ReadWeekDays.vue"
   },
-  "OrganismsCommonHeaderMenuItem": {
-    "description": "Auto imported from components/Organisms/Common/header/MenuItem.vue"
-  },
   "OrganismsQuestionsQuestionAddressInput": {
     "description": "Auto imported from components/Organisms/Questions/QuestionAddressInput/QuestionAddressInput.vue"
   },
+  "OrganismsQuestionsQuestionColorInput": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionColorInput/QuestionColorInput.vue"
+  },
   "OrganismsQuestionsQuestionImageSingle": {
     "description": "Auto imported from components/Organisms/Questions/QuestionImageSingle/QuestionImageSingle.vue"
+  },
+  "OrganismsQuestionsQuestionImageMulti": {
+    "description": "Auto imported from components/Organisms/Questions/QuestionImageMulti/QuestionImageMulti.vue"
   },
   "OrganismsQuestionsQuestionInput": {
     "description": "Auto imported from components/Organisms/Questions/QuestionInput/QuestionInput.vue"
@@ -206,11 +200,20 @@
   "OrganismsQuestionsQuestionToggle": {
     "description": "Auto imported from components/Organisms/Questions/QuestionToggle/QuestionToggle.vue"
   },
-  "OrganismsQuestionsQuestionImageMulti": {
-    "description": "Auto imported from components/Organisms/Questions/QuestionImageMulti/QuestionImageMulti.vue"
-  },
   "OrganismsQuestionsQuestionTextarea": {
     "description": "Auto imported from components/Organisms/Questions/QuestionTextarea/QuestionTextarea.vue"
+  },
+  "TemplatesItemsEventCalendar": {
+    "description": "Auto imported from components/Templates/Items/Event/Calendar.vue"
+  },
+  "TemplatesItemsPlanEditPlan": {
+    "description": "Auto imported from components/Templates/Items/Plan/EditPlan.vue"
+  },
+  "TemplatesItemsPlanListPlan": {
+    "description": "Auto imported from components/Templates/Items/Plan/ListPlan.vue"
+  },
+  "TemplatesItemsShopEditShop": {
+    "description": "Auto imported from components/Templates/Items/Shop/EditShop.vue"
   },
   "OrganismsEventItem": {
     "description": "Auto imported from components/Organisms/Event/Parts/Parts/EventItem.vue"

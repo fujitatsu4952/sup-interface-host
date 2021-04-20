@@ -15,7 +15,7 @@
 	<div class="item_plan_edit" @click="goEdit">
 		<img src="~assets/image/edit.svg" />
 	</div>
-	<div class="item_plan_delete">
+	<div class="item_plan_delete" @click="deletePlan">
 		<app-sub-title value="削除する" />
 	</div>
 </div>
@@ -24,6 +24,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import { PlanMast } from 'sup_abr';
+import { planInteractor } from '~/abr'
 // componets
 import PlanListItem from './PlanListItem.vue'
 import AppSubTitle from '~/components/Atoms/Text/AppTextH3.vue';
@@ -62,6 +63,10 @@ export default class PlanList extends Vue {
 				planID: this.planMast.planID
 			}
 		})
+	}
+
+	public async deletePlan() {
+		await planInteractor.deletePlanMast(this.$route.params.shopID, this.planMast.planID)
 	}
 }
 </script>
