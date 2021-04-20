@@ -174,6 +174,7 @@ export const addPlanMast = /* GraphQL */ `
       }
       inSale
       sortNum
+      color
       price {
         currencyType
         amount
@@ -222,6 +223,7 @@ export const updatePlanMast = /* GraphQL */ `
       }
       inSale
       sortNum
+      color
       price {
         currencyType
         amount
@@ -270,6 +272,7 @@ export const deletePlanMast = /* GraphQL */ `
       }
       inSale
       sortNum
+      color
       price {
         currencyType
         amount

@@ -86,6 +86,7 @@ export type PlanMastInput = {
   address: AddressObjectInput,
   inSale: boolean,
   sortNum: number,
+  color?: string | null,
   price: PriceObjectInput,
   createdAt?: number | null,
   updatedAt?: number | null,
@@ -334,6 +335,7 @@ export type AddPlanMastMutation = {
     },
     inSale: boolean,
     sortNum: number,
+    color: string | null,
     price:  {
       __typename: "PriceObject",
       currencyType: CurrencyType,
@@ -388,6 +390,7 @@ export type UpdatePlanMastMutation = {
     },
     inSale: boolean,
     sortNum: number,
+    color: string | null,
     price:  {
       __typename: "PriceObject",
       currencyType: CurrencyType,
@@ -442,6 +445,7 @@ export type DeletePlanMastMutation = {
     },
     inSale: boolean,
     sortNum: number,
+    color: string | null,
     price:  {
       __typename: "PriceObject",
       currencyType: CurrencyType,
@@ -673,6 +677,7 @@ export type FetchPlanMastsByShopIdQuery = {
     },
     inSale: boolean,
     sortNum: number,
+    color: string | null,
     price:  {
       __typename: "PriceObject",
       currencyType: CurrencyType,
@@ -727,6 +732,7 @@ export type FetchPlanMastByShopIdAndPlanIdQuery = {
     },
     inSale: boolean,
     sortNum: number,
+    color: string | null,
     price:  {
       __typename: "PriceObject",
       currencyType: CurrencyType,

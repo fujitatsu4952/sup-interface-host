@@ -8,7 +8,7 @@
                     <question-input questionTitle="一言紹介" name="一言紹介" rule="required" v-model="localValue.catchCopy" :required="true" />
                     <question-textare questionTitle="説明" name="説明" rule="required" v-model="localValue.explain" />
                     <question-image-simple questionTitle="キービジュアル" name="キービジュアル" rule="required" v-model="localValue.mainKeyVisual" :file.sync="mainKeyVisual" :required="true"  />
-                    <question-input-color questionTitle="キーカラー" v-model="localValue.color" beforeText="" afterText="円で販売する" />
+                    <question-input-color questionTitle="キーカラー" v-model="localValue.color" />
                     <!-- <question-image-multi questionTitle="ギャラリー" name="ギャラリー" v-model="localValue.keyVisuals" :files.sync="keyVisuals" /> -->
                     <question-address-input questionTitle="住所" v-model="localValue.address" />
                     <!-- <question-input-number questionTitle="掲載順" v-model="localValue.sortNum" beforeText="掲載順位を" afterText="番目にする" /> -->

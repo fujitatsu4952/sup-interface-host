@@ -29,6 +29,7 @@ import { planInteractor } from '~/abr'
 import PlanListItem from './PlanListItem.vue'
 import AppSubTitle from '~/components/Atoms/Text/AppTextH3.vue';
 import { hostStorageInteractor } from '~/amplify/storage';
+import { AsyncLoadingAndErrorHandle } from '~/abr/decorator/baseDecorator';
 @Component({
 
 	components: {
@@ -65,7 +66,7 @@ export default class PlanList extends Vue {
 		})
 	}
 
-	public async deletePlan() {
+	@AsyncLoadingAndErrorHandle() public async deletePlan() {
 		await planInteractor.deletePlanMast(this.$route.params.shopID, this.planMast.planID)
 	}
 }

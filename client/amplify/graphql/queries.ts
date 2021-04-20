@@ -154,6 +154,7 @@ export const fetchPlanMastsByShopId = /* GraphQL */ `
       }
       inSale
       sortNum
+      color
       price {
         currencyType
         amount
@@ -199,6 +200,7 @@ export const fetchPlanMastByShopIdAndPlanId = /* GraphQL */ `
       }
       inSale
       sortNum
+      color
       price {
         currencyType
         amount

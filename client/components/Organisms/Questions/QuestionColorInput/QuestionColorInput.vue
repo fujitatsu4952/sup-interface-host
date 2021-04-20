@@ -30,11 +30,11 @@ export default class QuestionColorInput extends Vue {
     public input(_: string) {}
 
     public get localValue(): string {
-        return this.value;
+        return this.value as string;
     }
 
     public set localValue(value: string) {
-        this.input(value);
+        this.input(value as string);
     }
 }
 </script>
